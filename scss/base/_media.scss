@@ -1,0 +1,669 @@
+//=========================================================================
+// Media queries general
+
+// Media queries for "__title" blocks
+@media screen and (min-width: 0rem) {
+  .title {
+    margin-bottom: 1.8750rem;
+  }
+
+  .world__title h2, 
+  .title h2 {
+    font-size: 1.8750rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .title {
+    margin-bottom: 2.1250rem;
+  }
+
+  .possibility__layout-black__title h2,
+  .world__title h2, 
+  .title h2 {
+    font-size: 2.1250rem;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .title {
+    margin-bottom: 2.2500rem;
+  }
+
+  .possibility__layout-black__title h2,
+  .world__title h2, 
+  .title h2 {
+    font-size: 2.3750rem;
+  }
+}
+
+// Media queries for :hover effects on touch screen
+@media screen and (min-width: 75rem) {
+  .btn__main:hover::before {
+    opacity: 1;
+  }
+  
+  .nav-menu-list__item:hover .nav-menu-list__item__link {
+    color: $color-secondary;
+  }
+
+  .suggestion__single-element {
+    &:hover .suggestion__single-element__circle {
+      background-color: transparent;
+      border: 2px solid $color-secondary;
+    }
+  
+    &:hover i {
+      color: $color-secondary;
+    }
+  }
+
+  .mobile-app__single-block:hover .mobile-app__single-block__inner{
+    box-shadow: .4375rem .4375rem .2500rem .1250rem rgba(0, 0, 0, 0.363);
+  }
+
+  .mobile-app__single-block__inner__plus:hover {
+    &::after, &::before {
+      background-color: $color-secondary-3;
+    }
+  }
+
+  .world__cities:hover .world__cities__elm-line {
+    transform: translateY(0rem);
+    opacity: 1;
+    transition: .3s linear 0s;
+  }
+
+  .social-links__item:hover {
+    background-color: transparent;
+    border: 1px solid $color-primary-6;
+  }
+  
+  .social-links__item:hover .social-links__item__link {
+    color: $color-primary-6;
+  }
+  
+  .nav-menu__main__item__link:hover {
+    border-bottom: 1px solid $color-primary-6;
+  }
+  
+  .nav-menu__additional__item__link:hover {
+    border-bottom: 1px solid $color-primary-2;
+  }
+ 
+  .menu-languages__item:hover .menu-languages__item__link{
+    border-bottom: 1px solid $color-secondary-2;
+  }
+
+  .title button {
+    @include bnt_hover-white;
+  }
+
+  .possibility__layout-black__title button,
+  .world__title button {
+    @include bnt_hover-black;
+  }
+}
+
+// Header =================================================================
+
+@media screen and (min-width: 0rem) {
+  .header__nav-menu {
+    padding: .7500rem 0rem;
+
+    &__inner {
+      justify-content: space-between;
+    }
+  }
+
+  .header__nav-menu__burger-button {
+    display: block;
+  }
+
+  .header__burger-nav-menu {
+    display: flex;
+  }
+
+  .header__nav-menu-list {
+    display: none;
+  }
+
+  .header__nav-menu__burger__logo {
+    display: block;
+  }
+
+  .header__sub-nav-menu {
+    top: 3.1250rem;
+    padding: .6250rem 0rem;
+  }
+
+  .sub-nav-menu__col__logo__logo p {
+    display: none;
+  }
+
+  .sub-nav-menu__col__call_visible,
+  .sub-nav-menu__call__button {
+    display: none;
+  }
+
+  .sub-nav-menu__col__call_hidden {
+    display: flex;
+
+    a {
+      font-size: 1rem; 
+      margin-bottom: .1250rem;
+    }
+    
+    button {
+      padding: .4375rem .5000rem;
+      font-size: .8125rem;
+    }
+  }
+}
+
+@media screen and (min-width: 36rem) and (max-width: 47.938rem) {
+  .sub-nav-menu__col__call_hidden {
+    a {
+      font-size: 1rem; 
+      margin-bottom: .1250rem;
+    }
+    
+    button {
+      padding: .6250rem .8750rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 61.938rem) {
+  .sub-nav-menu__col__call_hidden {
+    a {
+      font-size: 1.1250rem; 
+      margin-bottom: .2500rem;
+    }
+    
+    button {
+      padding: .7500rem .8750rem;
+      font-size: 1.1250rem;
+    }
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .header__nav-menu {
+    padding: .8750rem 3.7500rem;
+
+    &__inner {
+      justify-content: center;
+    }
+
+    &__burger__logo {
+      display: none;
+    }
+
+    &__burger-button {
+      display: none;
+    }
+  }
+
+  .header__burger-nav-menu {
+    display: none;
+  }
+
+  .header__sub-nav-menu {
+    top: 3.3750rem;
+    padding: .8125rem 0rem;
+  }
+  
+  .header__nav-menu-list {
+    display: flex;
+  }
+
+  .header__nav-menu__burger__logo {
+    display: none;
+  }
+  
+  .sub-nav-menu__col__logo__logo p {
+    display: block;
+  }
+  
+  .sub-nav-menu__col__call_visible,
+  .sub-nav-menu__call__button {
+    display: flex;
+  }
+  
+  .sub-nav-menu__col__call_hidden {
+    display: none;
+  }
+}
+
+// Promo =================================================================
+
+@media screen and (min-width: 0rem) {
+  .promo {
+    & .container {
+      padding-top: 45%;
+      padding-bottom: 10%;
+    }
+
+    &__title {
+      margin-bottom: 4.3750rem;
+
+      h1 {
+        font-size: 2.8750rem;
+        line-height: 4rem;
+      }
+
+      h2 {
+        font-size: 1.6250rem;
+        line-height: 2.75rem;
+      }
+    }
+
+    &__subtitle {
+      p {
+        display: none;
+      } 
+      
+      button {
+        font-size: 1rem;
+        padding: 1rem 1.5625rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  .promo {
+    & .container {
+      padding-top: 35%;
+      padding-bottom: 20%;
+    }
+
+    &__title {
+      h1 {
+        line-height: 4.1250rem;
+      }
+  
+      h2 {
+        font-size: 2.1250rem;
+        line-height: 2.8750rem;
+      }
+    }
+
+    &__subtitle button {
+      font-size: 1.1250rem;
+      padding: 1.2500rem 2.5000rem;
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .promo {
+    &__title {
+      h1 {
+        font-size: 3.7500rem;
+      }
+  
+      h2 {
+        font-size: 2.2500rem;
+      }
+    }
+
+    &__subtitle button {
+      padding: 1.2500rem 3.7500rem;
+    }
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .promo {
+    & .container {
+      padding-top: 25%;
+      padding-bottom: 10%;
+    }
+
+    &__title {
+      margin-bottom: 2.2500rem;
+  
+      h1 {
+        font-size: 3.3750rem;
+        line-height: 3.1250rem;
+      }
+  
+      h2 {
+        font-size: 2.2500rem;
+        line-height: 2.7500rem;
+      }
+    }
+
+    &__subtitle {
+      max-width: 80%;
+  
+      p {
+        display: block;
+      }
+  
+      p:first-of-type {
+        margin-bottom: 2.500rem;
+      }
+  
+      button {
+        padding: 1.2500rem 3.7500rem;
+        margin-top: 6.875rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .promo {
+    & .container {
+      padding-top: 15%;
+      padding-bottom: 5%;
+    }
+
+    &__subtitle {
+      max-width: 1000px;
+  
+      button {
+        padding: 1.2500rem 3.7500rem;
+        margin-top: 7.375rem;
+      }
+    }
+  }
+}
+
+// Suggestion =================================================================
+
+@media screen and (max-width: 47.938rem) {
+  .suggestion__single-element {
+    flex-direction: column;
+    align-items: center;
+
+    &__circle {
+      margin: 0rem 0rem 1rem 0rem;
+    }
+
+    &__text h3 {
+      font-size: 1.1250rem;
+      text-align: center;
+      margin-bottom: .3750rem;
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 61.938rem) {
+  .suggestion__title h2 {
+    font-size: 1.8750rem;
+  }
+
+  .suggestion__single-element {
+    align-items: flex-start;
+
+    &__circle {
+      margin: 0rem 1rem 0rem 0rem;
+    }
+
+    &__text h3 {
+      font-size: 1.1250rem;
+    }
+  }
+}
+
+@media screen and (min-width: 62rem) and (max-width: 74.938rem) {
+  .suggestion__title h2 {
+    font-size: 2.1250rem;
+  }
+
+  .suggestion__single-element {
+    flex-direction: column;
+    align-items: center;
+
+    &__circle {
+      margin: 0rem 0rem 1rem 0rem;
+    }
+
+    &__text h3{
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .suggestion__single-element {
+    align-items: flex-start;
+
+    &__circle {
+      margin: 0rem 1rem 0rem 0rem;
+    }
+
+    &__text h3 {
+      font-size: 1.1250rem;
+    }
+  }
+}
+
+// Possibility =================================================================
+
+@media screen and (max-width: 74.938rem) {
+  .possibility__layout-black {
+    padding: 3rem 0rem 5rem;
+
+    &__title {
+      h2, p {
+        display: none;
+      }
+    }
+  }
+
+  .possibility__layout__uber-car {
+    margin-top: .4rem;
+  }
+
+  .possibility__layout-black__text {
+    display: block;
+  }
+
+  .possibility__layout__img {
+    display: none;
+  }  
+}
+
+@media screen and (min-width: 75rem) {
+  .possibility__layout-black {
+    padding: 3rem 0rem 20.438rem;
+
+    &__text {
+      display: none;
+    }
+  }
+
+  .possibility__layout__uber-car {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .possibility__layout__img {
+    padding: 12.375rem 0rem 8.938rem;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .possibility__layout__uber-car {
+    top: 16rem;
+  }
+}
+
+@media screen and (min-width: 87.5rem) {
+  .possibility__layout__uber-car {
+    top: 14.875rem;
+  }
+}
+
+// Conditions =================================================================
+
+@media screen and (min-width: 0rem) {
+  .conditions__single-block__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 61.938rem) {
+  .conditions__single-block {
+    width: 80%;
+    margin: 0rem auto;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .conditions__single-block__title {
+    text-align: left;
+  }
+}
+
+// World =================================================================
+
+@media screen and (max-width: 61.938rem) {
+  .world {
+    height: 31rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .world {
+    height: 44.7500rem;
+  }
+}
+
+// Footer =================================================================
+
+@media screen and (min-width: 0rem) {
+  .footer {
+    padding: .8750rem .0rem 2.5000rem;
+
+    &__divider {
+      margin-bottom: 1.5000rem;
+  
+      div {
+        max-width: 17.812rem;
+      }
+    }
+  }
+
+  .footer__nav-menu__main,
+  .footer__nav-menu__additional {
+    margin-bottom: .7500rem;
+  }
+
+  .nav-menu__main__item:not(:last-child) {
+    margin-right: .7500rem;
+  }
+
+  .nav-menu__additional__item:not(:last-child) {
+    margin-right: .7500rem;
+  }
+
+  .menu-languages__item:not(:last-child) {
+    margin-right: .7500rem;
+  }
+
+  .social-links__item:not(:last-child) {
+    margin-right: .7500rem;
+  }
+
+  .mobile-app__list__item:not(:last-child) {
+    margin: 0rem .7500rem .7500rem 0rem;
+  }
+
+  .footer__social-links,
+  .footer__mobile-app {
+    justify-content: center;
+  }
+
+  .footer__mobile-app__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .footer {
+    padding: .8750rem .7500rem 2.5000rem;
+  }
+
+  .footer__divider {
+    margin-bottom: 1.6250rem;
+
+    div {
+      max-width: 19rem;
+    }
+  }
+
+  .footer__nav-menu__main,
+  .footer__nav-menu__additional {
+    margin-bottom: .8750rem;
+  }
+
+  .nav-menu__main__item:not(:last-child) {
+    margin-right: .8750rem;
+  }
+
+  .nav-menu__additional__item:not(:last-child) {
+    margin-right: .8750rem;
+  }
+
+  .menu-languages__item:not(:last-child) {
+    margin-right: .8750rem;
+  }
+
+  .social-links__item:not(:last-child) {
+    margin-right: .8750rem;
+  }
+
+  .mobile-app__list__item:not(:last-child) {
+    margin-right: .8750rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .footer__divider {
+    margin-bottom: 2.1250rem;
+  }
+
+  .footer__nav-menu__main,
+  .footer__nav-menu__additional {
+    margin-bottom: .9375rem;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .footer__social-links {
+    justify-content: flex-start;
+  }
+  
+  .footer__nav-menu {
+    justify-content: center;
+  }
+
+  .footer__mobile-app {
+    justify-content: flex-end;
+  }
+
+  .nav-menu__main__item:not(:last-child) {
+    margin-right: 2.8750rem;
+  }
+
+  .nav-menu__additional__item:not(:last-child) {
+    margin-right: 1.5000rem;
+  }
+
+  .mobile-app__list__item:not(:last-child) {
+    margin-right: .5625rem;
+  }
+
+  .menu-languages__item:not(:last-child) {
+    margin-right: .5rem;
+  }
+}

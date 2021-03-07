@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'My-Icons-Set';
+	src:
+		url("../fonts/MyIconsSet/My-Icons-Set.eot"),
+    url("../fonts/MyIconsSet/My-Icons-Set.woff"),
+    url("../fonts/MyIconsSet/My-Icons-Set.ttf"),
+    url("../fonts/MyIconsSet/My-Icons-Set.svg");
+  src: 
+  local("☺"),
+    url("../fonts/MyIconsSet/My-Icons-Set.eot") format('oet'),
+    url("../fonts/MyIconsSet/My-Icons-Set.woff") format('woff'),
+    url("../fonts/MyIconsSet/My-Icons-Set.ttf") format('ttf'),
+    url("../fonts/MyIconsSet/My-Icons-Set.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  box-sizing: border-box;
+  font-variant: normal;
+  line-height: .0625rem;
+  text-transform: none; 
+  display: inline-block;
+  font-display: swap;
+}
+
+[class^="mis-"], [class*=" mis-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'My-Icons-Set' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  box-sizing: border-box;
+  line-height: .0625rem;
+
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mis-support:before {
+  content: "\e949";
+}
+.mis-bonus:before {
+  content: "\e94a";
+}
+.mis-calendar:before {
+  content: "\e94b";
+}
+.mis-car:before {
+  content: "\e94c";
+}
+.mis-key:before {
+  content: "\e94d";
+}
+.mis-map:before {
+  content: "\e94e";
+}
+.mis-money:before {
+  content: "\e94f";
+}
+.mis-wallet:before {
+  content: "\e950";
+}
+.mis-facebook:before {
+  content: "\e900";
+}
+.mis-twitter:before {
+  content: "\e901";
+}
+.mis-instagram:before {
+  content: "\e902";
+}
+.mis-linkedin:before {
+  content: "\e903";
+}

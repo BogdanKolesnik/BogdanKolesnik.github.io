@@ -1,0 +1,5 @@
+﻿@for $i from 0 through 5 {
+  .mobile-app__single-block__inner_elm-#{$i + 1} {
+    background: url("../img/bg/card-#{$i + 1}.webp") center center / cover no-repeat;
+  }
+}

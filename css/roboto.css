@@ -1,0 +1,67 @@
+﻿@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto/Roboto-Light.woff'), 
+    url('../fonts/Roboto/Roboto-Light.ttf'),
+    url('../fonts/Roboto/Roboto-Light.otf'),
+    url('../fonts/Roboto/Roboto-Light.svg');
+    src: local('☺'), 
+    url('../fonts/Roboto/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Light.ttf') format('ttf'),
+    url('../fonts/Roboto/Roboto-Light.otf') format('otf'),
+    url('../fonts/Roboto/Roboto-Light.svg') format('svg');
+  font-weight: 300;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+    url('../fonts/Roboto/Roboto-Regular.woff'), 
+    url('../fonts/Roboto/Roboto-Regular.ttf'),
+    url('../fonts/Roboto/Roboto-Regular.otf'),
+    url('../fonts/Roboto/Roboto-Regular.svg');
+  src: local('☺'), 
+    url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf'),
+    url('../fonts/Roboto/Roboto-Regular.otf') format('otf'),
+    url('../fonts/Roboto/Roboto-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto/Roboto-Bold.woff'), 
+    url('../fonts/Roboto/Roboto-Bold.ttf'),
+    url('../fonts/Roboto/Roboto-Bold.otf'),
+    url('../fonts/Roboto/Roboto-Bold.svg');
+  src: local('☺'), 
+    url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Bold.ttf') format('ttf'),
+    url('../fonts/Roboto/Roboto-Bold.otf') format('otf'),
+    url('../fonts/Roboto/Roboto-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+    url('../fonts/Roboto/Roboto-Black.woff'),
+    url('../fonts/Roboto/Roboto-Black.ttf'),
+    url('../fonts/Roboto/Roboto-Black.otf'),
+    url('../fonts/Roboto/Roboto-Black.svg');
+  src: local('☺'), 
+    url('../fonts/Roboto/Roboto-Black.woff') format('woff'),
+    url('../fonts/Roboto/Roboto-Black.ttf') format('ttf'),
+    url('../fonts/Roboto/Roboto-Black.otf') format('otf'),
+    url('../fonts/Roboto/Roboto-Black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
